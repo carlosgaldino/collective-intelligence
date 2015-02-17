@@ -1,9 +1,8 @@
 module CollectiveIntelligence.Euclidean (similarity) where
 
+import CollectiveIntelligence.Types
 import CollectiveIntelligence.Critics
 import qualified Data.Map as M
-
-type Similarity = Double
 
 similarity :: Critics -> Person -> Person -> Similarity
 similarity cs person1 person2
