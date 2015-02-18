@@ -4,8 +4,7 @@ import qualified Data.Map as M
 
 type Person      = String
 type Movie       = String
-type Rating      = Double
-type Preferences = M.Map Movie Rating
-type Critics     = M.Map Person Preferences
+type Ratings     = M.Map Movie Double
+type Reviews     = M.Map Person Ratings
 type Similarity  = Double
-type SimFunction = Critics -> Person -> Person -> Similarity
+type SimFunction = Reviews -> Person -> Person -> Similarity
