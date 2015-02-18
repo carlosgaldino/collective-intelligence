@@ -1,5 +1,3 @@
-{-# LANGUAGE OverloadedStrings #-}
-
 module CollectiveIntelligence.Reviews (reviews) where
 
 import CollectiveIntelligence.Types
